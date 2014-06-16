@@ -1,0 +1,15 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: adoBe flash player
+Upstream-Contact: mail@adobe.com
+Source: http://get.adobe.com/flashplayer/otherversions/
+
+Files: *
+Copyright: Copyright © 2014 Adobe Systems Incorporated. All rights reserved.
+
+Files: debian/*
+Copyright: Copyright (c) 2014, Javier P.L. <chilicuil@ubuntu.com>
+License: GPL-3
+
+License: GPL-3
+ On Debian systems, the text of the GPL3 License can be found in
+ '/usr/share/common-licenses/GPL-3'.

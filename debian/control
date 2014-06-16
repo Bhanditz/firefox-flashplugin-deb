@@ -1,0 +1,18 @@
+Source: mozilla-flashplayer
+Section: x11
+Priority: optional
+Maintainer: Javier P.L. <chilicuil@ubuntu.com>
+Build-Depends: debhelper (>= 7.0.5), libx11-6, libxext6, libxt6, libxcursor1, libxrender1, libnss3, libnspr4, libgtk2.0-0, libatk1.0-0, libpango1.0-0, libgdk-pixbuf2.0-0, libcairo2, libfreetype6, libglib2.0-0
+Standards-Version: 3.9.4
+Homepage: http://www.adobe.com/products/flashplayer.html
+
+Package: mozilla-flashplayer
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: flashplugin-installer
+#let's asume ppl wont try to use flash on uncommon envs and let's save them some dependences
+#Build-Depends: debhelper (>= 7.0.5), libx11-6, libxext6, libxt6, libxcursor1, libxrender1, libnss3, libnspr4, libgtk2.0-0, libatk1.0-0, libpango1.0-0, libgdk-pixbuf2.0-0, libcairo2, libfreetype6, libglib2.0-0
+Description: Adobe Flash Player plugin
+ Adobe® Flash® Player is a lightweight browser plug-in and rich Internet
+ application runtime that delivers consistent and engaging user experiences,
+ stunning audio/video playback, and exciting gameplay.
