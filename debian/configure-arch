@@ -19,8 +19,6 @@ _arch()
     printf "%s" "${_arch_var_arch}"
 }
 
-pwd
-ls -lah
-
+tar jxf libflashplayer.tar.bz2
 cp libflashplayer$(_arch).so libflashplayer.so
 # vim: set ts=8 sw=4 tw=0 ft=sh : 
