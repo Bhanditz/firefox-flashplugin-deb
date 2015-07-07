@@ -1,4 +1,4 @@
-Source: mozilla-flashplayer
+Source: firefox-flashplugin
 Section: x11
 Priority: optional
 Maintainer: Javier P.L. <chilicuil@ubuntu.com>
@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 7.0.5), libx11-6, libxext6, libxt6, libxcursor1, li
 Standards-Version: 3.9.4
 Homepage: http://www.adobe.com/products/flashplayer.html
 
-Package: mozilla-flashplayer
+Package: firefox-flashplugin
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Conflicts: flashplugin-installer

@@ -24,12 +24,12 @@ get-orig-source:
 	rm -rf debian/tmp; mkdir debian/tmp
 	#cd debian/tmp; wget http://f.javier.io/rep/bin/libflashplayer64.so
 	#cd debian/tmp; wget http://f.javier.io/rep/bin/libflashplayer32.so
-	cd debian/tmp; wget https://github.com/minos-org/mozilla-flashplayer/archive/${DEB_MASTER_VERSION}.tar.gz
-	#cd debian/tmp; mkdir mozilla-flashplayer-${DEB_UPSTREAM_VERSION}
-	#cd debian/tmp; mv libflashplayer*so mozilla-flashplayer-${DEB_UPSTREAM_VERSION}
+	cd debian/tmp; wget https://github.com/minos-org/firefox-flashplugin/archive/${DEB_MASTER_VERSION}.tar.gz
+	#cd debian/tmp; mkdir firefox-flashplugin-${DEB_UPSTREAM_VERSION}
+	#cd debian/tmp; mv libflashplayer*so firefox-flashplugin-${DEB_UPSTREAM_VERSION}
 	cd debian/tmp; tar xvzf ${DEB_MASTER_VERSION}.tar.gz
-	cd debian/tmp; mv mozilla-flashplayer-* mozilla-flashplayer-${DEB_UPSTREAM_VERSION}
-	cd debian/tmp; tar cvJf mozilla-flashplayer_${DEB_UPSTREAM_VERSION}.orig.tar.xz mozilla-flashplayer-${DEB_UPSTREAM_VERSION}
-	mv debian/tmp/mozilla-flashplayer_${DEB_UPSTREAM_VERSION}.orig.tar.xz .
-	mv debian/tmp/mozilla-flashplayer-${DEB_UPSTREAM_VERSION} .
+	cd debian/tmp; mv firefox-flashplugin-* firefox-flashplugin-${DEB_UPSTREAM_VERSION}
+	cd debian/tmp; tar cvJf firefox-flashplugin_${DEB_UPSTREAM_VERSION}.orig.tar.xz firefox-flashplugin-${DEB_UPSTREAM_VERSION}
+	mv debian/tmp/firefox-flashplugin_${DEB_UPSTREAM_VERSION}.orig.tar.xz .
+	mv debian/tmp/firefox-flashplugin-${DEB_UPSTREAM_VERSION} .
 	rm -rf debian/tmp
